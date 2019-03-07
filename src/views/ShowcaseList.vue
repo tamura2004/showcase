@@ -1,6 +1,7 @@
 <template lang="pug">
 v-layout(row)
-  v-flex(xs12 sm6 offset-sm3)
+  v-flex(xs12 sm6 offset-sm3 text-xs-center)
+    .display-2.ma-4 リスト
     v-toolbar.mt-4(dark flat color="primary")
       v-toolbar-title 予定表
     v-list(two-line)

@@ -2,7 +2,7 @@
 v-container.pa-4(fluid)
   v-layout(align-center)
     v-flex(xs12 text-xs-center)
-      .display-2 ボタン
+      .display-2.mb-4 ボタン
       div.my-4
         v-btn(color="primary") primary
         v-btn(color="success") success

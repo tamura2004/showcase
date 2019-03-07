@@ -1,6 +1,7 @@
 <template lang="pug">
 v-form(v-model='valid')
   v-container
+    .display-2.my-4.text-xs-center フォーム
     v-layout
       v-flex(xs12, md4)
         v-text-field(v-model='firstname', :rules='nameRules', :counter='10', label='First name', required)
