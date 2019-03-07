@@ -1,23 +1,40 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+
+import ShowcaseHome from '@/views/ShowcaseHome.vue';
+import ShowcaseIcon from '@/views/ShowcaseIcon.vue';
+import ShowcaseBtn from '@/views/ShowcaseBtn.vue';
+import ShowcaseCard from '@/views/ShowcaseCard.vue';
+import ShowcaseList from '@/views/ShowcaseList.vue';
+import ShowcaseForm from '@/views/ShowcaseForm.vue';
+import ShowcaseDialog from '@/views/ShowcaseDialog.vue';
 
 Vue.use(Router);
-
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: '/icon',
+      component: ShowcaseIcon,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      path: '/btn',
+      component: ShowcaseBtn,
+    },
+    {
+      path: '/card',
+      component: ShowcaseCard,
+    },
+    {
+      path: '/list',
+      component: ShowcaseList,
+    },
+    {
+      path: '/form',
+      component: ShowcaseForm,
+    },
+    {
+      path: '/dialog',
+      component: ShowcaseDialog,
     },
   ],
 });
