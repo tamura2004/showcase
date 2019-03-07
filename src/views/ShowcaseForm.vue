@@ -18,12 +18,12 @@ export default class ShowCaseForm extends Vue {
   private valid: boolean = false;
   private firstname: string = '';
   private lastname: string = '';
-  private nameRules: Array<(string) => boolean | string> = [
+  private nameRules: Array<(v: string) => boolean | string> = [
     (v: string) => !!v || 'Name is required',
     (v: string) => v.length <= 10 || 'Name must be less then 10 characters',
   ];
   private email: string = '';
-  private emailRules: Array<(string) => boolean | string> = [
+  private emailRules: Array<(v: string) => boolean | string> = [
     (v: string) => !!v || 'E-mail is required',
     (v: string) => /.+@.+/.test(v) || 'E-mail must be valid',
   ];

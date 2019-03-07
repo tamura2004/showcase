@@ -7,7 +7,7 @@ v-container.pa-4(fluid)
         v-card-title(primary-title='')
           div
             h3.headline.mb-0 Kangaroo Valley Safari
-            div  {{ card_text }}
+            div  {{ cardText }}
         v-card-actions
           v-btn(flat='', color='orange') Share
           v-btn(flat='', color='orange') Explore
@@ -18,7 +18,15 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class ShowCaseCard extends Vue {
-  private card_text: string = 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.';
+  private cardText: string = `
+    Lorem ipsum dolor sit amet, brute iriure accusata ne mea.
+    Eos suavitate referrentur ad, te duo agam libris qualisque,
+    utroque quaestio accommodare no qui.
+    Et percipit laboramus usu, no invidunt verterem nominati mel.
+    Dolorem ancillae an mei, ut putant invenire splendide mel,
+    ea nec propriae adipisci. Ignota salutandi accusamus in sed,
+    et per malis fuisset, qui id ludus appareat.';
+  `;
 }
 </script>
 
