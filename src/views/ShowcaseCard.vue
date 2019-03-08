@@ -4,14 +4,17 @@ v-container.pa-4(fluid)
     v-flex(xs12 sm6 offset-sm3 text-xs-center)
       .display-2.mb-4 カード
       v-card
-        v-img(src='https://cdn.vuetifyjs.com/images/cards/desert.jpg', aspect-ratio='2.75')
+        v-img(
+          src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+          aspect-ratio="2.75"
+        )
         v-card-title(primary-title)
           div
             h3.headline.mb-0 Kangaroo Valley Safari
             div  {{ cardText }}
         v-card-actions
-          v-btn(flat, color='orange') Share
-          v-btn(flat, color='orange') Explore
+          v-btn(flat color="orange") Share
+          v-btn(flat color="orange") Explore
 </template>
 
 <script lang="ts">

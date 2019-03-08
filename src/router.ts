@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import ShowcaseHome from '@/views/ShowcaseHome.vue';
 import ShowcaseIcon from '@/views/ShowcaseIcon.vue';
 import ShowcaseBtn from '@/views/ShowcaseBtn.vue';
 import ShowcaseCard from '@/views/ShowcaseCard.vue';
