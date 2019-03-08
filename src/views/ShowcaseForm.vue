@@ -1,29 +1,29 @@
 <template lang="pug">
-v-form(v-model=”valid”)
+v-form(v-model="valid")
   v-container
     .display-2.my-4.text-xs-center フォーム
     v-layout
       v-flex(xs12, md4)
         v-text-field(
-          v-model=”firstname”
-          :rules=”nameRules”
-          :counter=”10”
-          label=”First name”
+          v-model="firstname"
+          :rules="nameRules"
+          :counter="10"
+          label="First name"
           required
         )
       v-flex(xs12, md4)
         v-text-field(
-          v-model=”lastname”
-          :rules=”nameRules”
-          :counter=”10”
-          label=”Last name”
+          v-model="lastname"
+          :rules="nameRules"
+          :counter="10"
+          label="Last name"
           required
         )
       v-flex(xs12 md4)
         v-text-field(
-          v-model=”email”
-          :rules=”emailRules”
-          label=”E-mail”
+          v-model="email"
+          :rules="emailRules"
+          label="E-mail"
           required
         )
 </template>
